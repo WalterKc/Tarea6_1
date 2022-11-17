@@ -53,6 +53,8 @@ function creadorDeInputs(array,valor){
 function crearMasFamiliares(cantidad){
     if (arrayTrabajo().length===0){
         alert("por favor, ingresa un numero de familiares")
+        
+
     }else{
     contador=arrayTrabajo().length
     for (x=0;x<cantidad;x+=1){
@@ -91,9 +93,13 @@ function ocultadorBoton(valor){
 
 
 function maximoArray(array) {
+    
     if (array.length<=2){
-        alert("parece que te olvidaste de llenar las edades, es neceasrio al menos 2 edades para poder calcular")
-        return "X"
+        let hidden=document.createAttribute("hidden")
+        H2Cambiante2.setAttributeNode(hidden)
+        alert("parece que te olvidaste de llenar las edades, es necesario al menos 2 edades para poder calcular")
+        
+        
     }else{
         H2Cambiante2.removeAttribute('hidden')
         return Math.max.apply(null, array);
@@ -104,7 +110,7 @@ function maximoArray(array) {
 
 function minimoArray(array) {
     if (array.length<=2){
-        return " X "
+       
     }else{
         
         return Math.min.apply(null, array);
@@ -113,7 +119,7 @@ function minimoArray(array) {
 
 function promedio(array){
     if (array.length<=2){
-        return " X "
+       
     }else{
         let contador=0
         for (x of array){
