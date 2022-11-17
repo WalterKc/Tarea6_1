@@ -15,8 +15,8 @@
 
 <body>
   <header>
-    <h1 id="texto_cambio">EJERCICIO 6</h1>
-    <h2 id="texto_h2"> hola, este es el ejercicio 6 parte 1, primero vamos a preguntar, ¿cuantas personas
+    <h1 id="textoCambio">EJERCICIO 6</h1>
+    <h2 id="textoH2"> hola, este es el ejercicio 6 parte 1, primero vamos a preguntar, ¿cuantas personas
       hay en la familia?
     </h2>
     
@@ -25,38 +25,32 @@
         <li id="test2">
           <label class="test3" for="sueldo">ingrese cantidad de personas:</label>
           <input class="test3" type="number" id="edad" placeholder="numero de integrantes" />
-          <input class="test3" type="button" id="boton_agregar_inicial"  value="agregar familiares"
-          onClick="test_for2(capturar_numero());test_for3(array_trabajo(),0)" />
-          <input class="test3" type="button" id="boton_agregar_secundario"  value="agregar mas familiares"
-          onClick="crear_mas_familiares(capturar_numero())" hidden/>
-          <input class="test3" type="button" id="boton_quitar_familiar"  value="quitar 1 familiar" 
-          onClick="remover_familiar()" hidden/>
-          <input class="test3" type="button" id="boton_calcular"  value="calcular" 
-          onClick="H2_cambiante_2.innerHTML='la edad maxima de esta familia es '+ maximo_array(array_valores_familiares(array_trabajo()))+
-          ' la minima es '+ minimo_array(array_valores_familiares(array_trabajo())) + ' y la promedio es '+ promedio(array_valores_familiares(array_trabajo()))
-          H2_cambiante_2.removeAttribute('hidden') "/>
-          <button >RESET</button>
+          <input class="test3" type="button" id="botonAgregarInicial"  value="agregar familiares"
+          onClick="creadorDelista(capturarNumero());creadorDeInputs(arrayTrabajo(),0)" />
+          <input class="test3" type="button" id="botonAgregarSecundario"  value="agregar mas familiares"
+          onClick="crearMasFamiliares(capturarNumero())" hidden/>
+          <input class="test3" type="button" id="botonQuitarFamiliar"  value="quitar 1 familiar" 
+          onClick="removerFamiliar()" hidden/>
+          <input class="test3" type="button" id="botonCalcular"  value="calcular" 
+          onClick="H2Cambiante2.innerHTML='la edad maxima de esta familia es '+ maximoArray(arrayValoresFamiliares(arrayTrabajo()))+
+          ' la minima es '+ minimoArray(arrayValoresFamiliares(arrayTrabajo())) + ' y la promedio es '+ promedio(arrayValoresFamiliares(arrayTrabajo()))
+           "/>
+          
 
         </li>
-      </un>
-      <ul class="contenido">
-        <li class="contenido_item">index</li>
-        <li class="contenido_item">index</li>
-        <li class="contenido_item">index</li>
-      </ul>
-      <un id="array_familia">
+        <un id="arrayFamilia">
         
         
-      </un>
+        </un>
+      
     </form>
     
-    <div id="parentElement">
-      <span id="childElement">foo bar</span>
-    </div>
-  <h2 id="texto_h2B" hidden>la edad maxima de esta familia es X, la minima es X, y la promedio es X</h2>
+   
+  <h2 id="textoH2B" hidden>la edad maxima de esta familia es X, la minima es X, y la promedio es X</h2>
 
   
   </footer>
+  <button >RESET</button>
 
   <script src="js/tarea6.js"></script>
 </body>
