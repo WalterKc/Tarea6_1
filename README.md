@@ -1,2 +1,1 @@
-# Tarea6_1
- tarea 6 1 resuelta
+Tarea 6 1 resuelta
